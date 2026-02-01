@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPocket">
         <activity
+            android:name=".Wants"
+            android:exported="false" />
+        <activity
+            android:name=".Needs"
+            android:exported="false" />
+        <activity
             android:name=".SetGoal"
             android:exported="false" />
         <activity
@@ -22,12 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false" />
-        <activity
-            android:name=".NeedsWants"
-            android:exported="false" />
-        <activity
-            android:name=".DividedBudget"
             android:exported="false" />
         <activity
             android:name=".Step2"
