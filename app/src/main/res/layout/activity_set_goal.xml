@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SetGoal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setgoal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Let’s Set a Goal"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="Small steps today,
+big progress tomorrow."
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/goalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="60dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/unlockBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlock Your Future!"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/emerald"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="4dp"/>
+</LinearLayout>

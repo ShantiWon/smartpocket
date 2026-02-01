@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1"
+    android:background="@drawable/bg_blue_circle">
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1 of 3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_below="@id/steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:progress="33"
+        app:indicatorColor="@color/white"
+        app:trackColor="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What’s your monthly income?"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerThickness="1dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="30dp"
+            app:dividerColor="@color/gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We’ll use this to suggest a budget that works for you."
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/emerald"
+            app:cardCornerRadius="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="₱10,000.00"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</RelativeLayout>
