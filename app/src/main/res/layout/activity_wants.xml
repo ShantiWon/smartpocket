@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NeedsWants"
+    tools:context=".Wants"
     android:background="@drawable/bg_blue_circle">
 
     <TextView
@@ -53,7 +53,7 @@
             android:textSize="18dp"
             android:gravity="center_horizontal"/>
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             app:cardCornerRadius="10dp"
@@ -73,9 +73,10 @@
                     android:textSize="36sp"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="340dp"
             android:columnCount="1"
             android:layout_marginVertical="20dp"
             >
@@ -114,6 +115,34 @@
             </com.google.android.material.card.MaterialCardView>
 
         </GridLayout>
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Your remaining money:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_selected"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/wantsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱5,000.00"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
