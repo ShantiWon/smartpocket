@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPocket">
         <activity
+            android:name=".ManageBudget"
+            android:exported="false" />
+        <activity
+            android:name=".Summary"
+            android:exported="false" />
+        <activity
+            android:name=".CheckSavings"
+            android:exported="false" />
+        <activity
+            android:name=".AddItem"
+            android:exported="false" />
+        <activity
             android:name=".WantsHome"
             android:exported="false" />
         <activity

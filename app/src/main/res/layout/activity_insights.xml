@@ -6,27 +6,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".Insights"
-    android:background="@drawable/bg_blue">
+    android:background="@drawable/bg_purple_vert">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Monthly Insights"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Budgeting made simple.
+Track your spending and smart saving."
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_card_orange"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="You have saved"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₱5,000.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="this MONTH! "
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity Feed"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_marginTop="60dp"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_purple_curve"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="10dp"
         >
-
-    </RelativeLayout>
-
-
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You’re building great habits!"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/standBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/emerald"
+        android:text="See Where You Stand"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>

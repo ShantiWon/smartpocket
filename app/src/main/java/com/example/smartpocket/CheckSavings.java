@@ -12,33 +12,23 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class Feed extends AppCompatActivity {
-    MaterialButton addBtn, finishBtn;
+public class CheckSavings extends AppCompatActivity {
+    MaterialButton confirmBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_feed);
+        setContentView(R.layout.activity_check_savings);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        addBtn = findViewById(R.id.addBtn);
-        finishBtn = findViewById(R.id.finishBtn);
-
-        addBtn.setOnClickListener(new View.OnClickListener() {
+        confirmBtn =  findViewById(R.id.confirmBtn);
+        confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Feed.this, AddItem.class);
-                startActivity(intent);
-            }
-        });
-        finishBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Feed.this, CheckSavings.class);
+                Intent intent = new Intent(CheckSavings.this, Insights.class);
                 startActivity(intent);
             }
         });

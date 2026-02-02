@@ -120,7 +120,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/emerald"
             android:text="Login"
