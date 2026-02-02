@@ -12,27 +12,26 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.card.MaterialCardView;
 
-public class Home extends AppCompatActivity {
-    MaterialCardView wantsBtn, feedsBtn;
+public class WantsHome extends AppCompatActivity {
 
+    MaterialCardView homeBtn, feedsBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_wants_home);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        wantsBtn = findViewById(R.id.wantsBtn);
+        homeBtn = findViewById(R.id.homeBtn);
         feedsBtn = findViewById(R.id.feedsBtn);
 
-        wantsBtn.setOnClickListener(new View.OnClickListener() {
+        homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, WantsHome.class);
+                Intent intent = new Intent(WantsHome.this, Home.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +39,7 @@ public class Home extends AppCompatActivity {
         feedsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Feed.class);
+                Intent intent = new Intent(WantsHome.this, Feed.class);
                 startActivity(intent);
             }
         });

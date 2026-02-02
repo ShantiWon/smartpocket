@@ -5,4 +5,9 @@
     <color name="blue">#245be8</color>
     <color name="gray">#C7C7C8</color>
     <color name="emerald">#03a6a1</color>
+    <color name="dark_purple">#001e5c</color>
+    <color name="orange">#ed9a3a</color>
+    <color name="light_blue">#179be6</color>
+    <color name="red">#e05251</color>
+    <color name="cyan">#00cabe</color>
 </resources>

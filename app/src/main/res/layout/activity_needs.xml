@@ -64,11 +64,13 @@
                 android:background="@drawable/bg_selected"
                 android:gravity="center"
                 >
-                <TextView
+                <EditText
                     android:id="@+id/wantsAmount"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="₱5,000.00"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:hint="₱5,000.00"
                     android:textColor="@color/white"
                     android:textSize="36sp"/>
             </RelativeLayout>
@@ -76,7 +78,7 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="340dp"
+            android:layout_height="280dp"
             android:columnCount="1"
             android:layout_marginVertical="20dp"
             >
